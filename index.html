@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Мой первый сайт</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Установка моей игры</title>
+    <style>
+        /* Стили, чтобы страница выглядела современно */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0d1117; /* Темный фон */
+            font-family: -apple-system, sans-serif;
+        }
+
+        .download-card {
+            text-align: center;
+            background: #161b22;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #30363d;
+        }
+
+        h1 { color: white; margin-bottom: 25px; font-size: 24px; }
+
+        /* Стиль самой кнопки */
+        .install-btn {
+            display: inline-block;
+            padding: 18px 35px;
+            background-color: #238636; /* Зеленый цвет */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 12px;
+            transition: 0.2s;
+            box-shadow: 0 4px 15px rgba(35, 134, 54, 0.3);
+        }
+
+        .install-btn:hover {
+            background-color: #2ea043;
+            transform: scale(1.05);
+        }
+
+        .install-btn:active {
+            transform: scale(0.98);
+        }
+
+        .info {
+            color: #8b949e;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ура! Мой сайт на GitHub заработал!</h1>
-    <p>Это моя первая страница.</p>
+
+    <div class="download-card">
+        <h1>Моя крутая игра</h1>
+        
+        <!-- СЮДА ВСТАВЛЯЙ ССЫЛКУ МЕЖДУ КАВЫЧЕК -->
+        <a href="https://drive.google.com/file/d/1KnyS3ESDy5ExVzzz6OjOyCzF3ZyIRRlc/view?usp=drive_link" target="_blank" class="install-btn">
+            СКАЧАТЬ APK (Android)
+        </a>
+
+        <div class="info">Размер: > 25 МБ</div>
+    </div>
+
 </body>
 </html>
