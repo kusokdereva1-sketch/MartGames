@@ -3,71 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Square</title>
+    <title>MartGames Studios | FastSquare</title>
     <style>
-        /* Стили, чтобы страница выглядела современно */
+        /* Основные настройки (Светлая тема) */
         body {
             margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Белый фон */
+            color: #333333; /* Темно-серый текст для глаз */
+            font-family: 'Segoe UI', Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            background-color: #0d1117; /* Темный фон */
-            font-family: -apple-system, sans-serif;
         }
 
-        .download-card {
+        /* Заголовок вверху */
+        header {
             text-align: center;
-            background: #161b22;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            border: 1px solid #30363d;
+            padding: 60px 20px 10px;
         }
 
-        h1 { color: white; margin-bottom: 25px; font-size: 24px; }
-        
-         /* Стиль самой кнопки */
-        .install-btn {
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Подзаголовок */
+        h2 {
+            font-size: 1.8rem;
+            margin: 5px 0 50px;
+            color: #666666;
+            font-weight: 300;
+        }
+
+        /* Контейнер: Скриншот (слева) + Описание (справа) */
+        .container {
+            display: flex;
+            max-width: 1100px;
+            width: 90%;
+            gap: 50px;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        /* Левая колонка: Скриншот */
+        .screenshot-box {
+            flex: 1.2;
+        }
+
+        .screenshot-box img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Легкая тень */
+            border: 1px solid #eeeeee;
+        }
+
+        /* Правая колонка: Описание */
+        .description-box {
+            flex: 1;
+            padding-top: 10px;
+        }
+
+        .description-box p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #444444;
+            margin: 0;
+        }
+
+        /* Кнопка внизу */
+        .footer {
+            margin-bottom: 80px;
+        }
+
+        .btn-download {
             display: inline-block;
-            padding: 18px 35px;
-            background-color: #238636; /* Зеленый цвет */
+            background-color: #28a745; /* Сочный зеленый */
             color: white;
-            text-decoration: none;
+            padding: 18px 50px;
+            font-size: 1.4rem;
             font-weight: bold;
-            font-size: 20px;
-            border-radius: 12px;
-            transition: 0.2s;
-            box-shadow: 0 4px 15px rgba(35, 134, 54, 0.3);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.2s, transform 0.1s;
         }
 
-        .install-btn:hover {
-            background-color: #2ea043;
-            transform: scale(1.05);
+        .btn-download:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
         }
 
-        .install-btn:active {
-            transform: scale(0.98);
+        .btn-download:active {
+            transform: translateY(0);
         }
 
-        .info {
-            color: #8b949e;
-            margin-top: 15px;
-            font-size: 14px;
+        /* Для мобильных устройств */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; align-items: center; }
+            h1 { font-size: 2rem; }
+            .description-box { text-align: center; }
         }
     </style>
 </head>
 <body>
 
-    <div class="download-card">
-        <h1>Моя крутая игра</h1>
-        
-        <!-- СЮДА ВСТАВЛЯЙ ССЫЛКУ МЕЖДУ КАВЫЧЕК -->
-        <a href="https://drive.google.com/file/d/1KnyS3ESDy5ExVzzz6OjOyCzF3ZyIRRlc/view?usp=drive_link" target="_blank" class="install-btn">
-            СКАЧАТЬ APK (Android)
-        </a>
+    <header>
+        <h1>MartGames Studios</h1>
+        <h2>FastSquare</h2>
+    </header>
 
-        <div class="info">Размер: > 25 МБ</div>
+    <div class="container">
+        <!-- СЛЕВА: Место для картинки -->
+        <div class="screenshot-box">
+            <!-- Замени 'screen.png' на название своего файла со скриншотом -->
+            <img src="screen.png" alt="Скриншот FastSquare">
+        </div>
+
+        <!-- СПРАВА: Место для описания -->
+        <div class="description-box">
+            <p>
+                <strong>FastSquare</strong> — это захватывающая игра, в которой ваша скорость и реакция решают всё. 
+                Пройдите все уровни, устанавливайте рекорды и соревнуйтесь с друзьями! 
+                <br><br>
+                Особенности игры: <br>
+                • Динамичный геймплей <br>
+                • Простое управление <br>
+                • Оптимизация под любые устройства
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <!-- КНОПКА: Вставь свою ссылку из Google Диска в кавычки href -->
+        <a href="ВСТАВЬ_СЮДА_ССЫЛКУ" target="_blank" class="btn-download">
+            СКАЧАТЬ APK
+        </a>
     </div>
 
 </body>
