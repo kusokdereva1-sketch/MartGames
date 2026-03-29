@@ -5,106 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MartGames Studios | FastSquare</title>
     <style>
-        /* Основные настройки (Светлая тема) */
         body {
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* Белый фон */
-            color: #333333; /* Темно-серый текст для глаз */
-            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Заголовок вверху */
         header {
             text-align: center;
-            padding: 60px 20px 10px;
+            padding: 40px 20px;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 48px;
             margin: 0;
-            color: #000000;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
-        /* Подзаголовок */
         h2 {
-            font-size: 1.8rem;
-            margin: 5px 0 50px;
-            color: #666666;
-            font-weight: 300;
+            font-size: 32px;
+            margin: 10px 0;
+            font-weight: normal;
         }
 
-        /* Контейнер: Скриншот (слева) + Описание (справа) */
         .container {
             display: flex;
-            max-width: 1100px;
+            max-width: 1200px;
             width: 90%;
-            gap: 50px;
-            align-items: flex-start;
-            margin-bottom: 60px;
+            gap: 40px;
+            margin-top: 30px;
         }
 
-        /* Левая колонка: Скриншот */
-        .screenshot-box {
-            flex: 1.2;
-        }
-
-        .screenshot-box img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Легкая тень */
-            border: 1px solid #eeeeee;
-        }
-
-        /* Правая колонка: Описание */
-        .description-box {
+        /* Место для скриншота (слева) */
+        .screenshot {
             flex: 1;
-            padding-top: 10px;
         }
 
-        .description-box p {
-            font-size: 1.15rem;
-            line-height: 1.6;
-            color: #444444;
-            margin: 0;
+        .screenshot img {
+            width: 100%;
+            border: 1px solid #ccc;
         }
 
-        /* Кнопка внизу */
+        /* Место для описания (справа) */
+        .description {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
         .footer {
-            margin-bottom: 80px;
+            margin: 50px 0;
         }
 
-        .btn-download {
+        /* Зеленая кнопка */
+        .download-btn {
             display: inline-block;
-            background-color: #28a745; /* Сочный зеленый */
-            color: white;
-            padding: 18px 50px;
-            font-size: 1.4rem;
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 20px 60px;
+            font-size: 24px;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 6px;
-            transition: background 0.2s, transform 0.1s;
-        }
-
-        .btn-download:hover {
-            background-color: #218838;
-            transform: translateY(-2px);
-        }
-
-        .btn-download:active {
-            transform: translateY(0);
-        }
-
-        /* Для мобильных устройств */
-        @media (max-width: 768px) {
-            .container { flex-direction: column; align-items: center; }
-            h1 { font-size: 2rem; }
-            .description-box { text-align: center; }
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -116,30 +83,20 @@
     </header>
 
     <div class="container">
-        <!-- СЛЕВА: Место для картинки -->
-        <div class="screenshot-box">
-            <!-- Замени 'screen.png' на название своего файла со скриншотом -->
-            <img src="screen.png" alt="Скриншот FastSquare">
+        <div class="screenshot">
+            <!-- Замени screen.png на название своего файла -->
+            <img src="screen.png" alt="Скриншот игры">
         </div>
 
-        <!-- СПРАВА: Место для описания -->
-        <div class="description-box">
-            <p>
-                <strong>FastSquare</strong> — это захватывающая игра, в которой ваша скорость и реакция решают всё. 
-                Пройдите все уровни, устанавливайте рекорды и соревнуйтесь с друзьями! 
-                <br><br>
-                Особенности игры: <br>
-                • Динамичный геймплей <br>
-                • Простое управление <br>
-                • Оптимизация под любые устройства
-            </p>
+        <div class="description">
+            <!-- Сюда впиши свой текст -->
+            FastSquare - это увлекательная мобильная игра с простым геймплеем. В игре присутствует большое количество различных механик. Здесь 2 главы по 10 уровней в каждой, 10 скинов и всё разблокировано с самого начала игры! Добро пожаловать в увлекательный мир FastSquare!
         </div>
     </div>
 
     <div class="footer">
-        <!-- КНОПКА: Вставь свою ссылку из Google Диска в кавычки href -->
-        <a href="ВСТАВЬ_СЮДА_ССЫЛКУ" target="_blank" class="btn-download">
-            СКАЧАТЬ APK
+        <a href="https://drive.google.com/file/d/1KnyS3ESDy5ExVzzz6OjOyCzF3ZyIRRlc/view?usp=drive_link" class="download-btn">
+            СКАЧАТЬ
         </a>
     </div>
 
